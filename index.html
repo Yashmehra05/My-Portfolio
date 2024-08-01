@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/07b6e32142.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="yash">YASH</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p id="noboy">FULL STACK WEB DEVELOPER</p><br>
+                <h1>Hi, I'm <span>YashPreet</span> Singh</h1>
+            </div>
+        </div>
+    </div>
+ <section id="about">
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./IMG_20230802_063712.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle" style="font-size: 80px;
+                    font-weight: 1000;
+                    background-image: url(data:image/jpeg;base64,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);
+                    background-size: cover;
+                    background-position: center;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    margin-top: 20px;">About Me</h1><br><br>
+                    <h4>I am a dedicated Full Stack Web Developer with a strong focus on frontend development. Currently
+                        in my 7th semester of B.Tech in Computer Science and Engineering, I have built a solid
+                        foundation in HTML, CSS, and JavaScript. My passion lies in creating responsive and
+                        user-friendly web interfaces. With hands-on experience in both frontend and backend
+                        technologies, I bring a comprehensive understanding of the web development process. I am eager
+                        to leverage my skills in a frontend developer role, contributing to innovative projects and
+                        collaborating with dynamic teams. My goal is to continuously learn and stay updated with the
+                        latest trends in frontend development.</h4>
+                        <br><br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                        <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><B>
+                                        <h3>Backend Development</h3>
+                                    </B></span><br>C++, JAVA, MongoDB, MySQl, Node JS, Express JS</li><br>
+                            <li><span><B>
+                                        <h3>Frontend Development</h3>
+                                    </B></span><br>HTML, CSS, JavaScript, React JS, Axios, Tailwind CSS</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <h4>FRESHER FOR NOW</h4>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><B>
+                                        <h3>10th</h3>
+                                    </B></span><br>Government Senior Secondary School, Dugri</li><br>
+                            <li><span><B>
+                                        <h3>12th</h3>
+                                    </B></span><br>Government Senior Secondary School (boys), Ropar</li><br>
+                            <li><span><B>
+                                        <h3>B.Tech in Computer Science and Engineering</h3>
+                                    </B></span><br>Rayat Bahra University, Mohali</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services">
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">
+                <h1>My Services</h1>
+            </div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the art of planning and arranging content on a website so that it can be shared and
+                        accessed online with the world. A combination of aesthetic and functional elements, web design
+                        is a type of digital design that determines the look of a website—such as its colors, fonts,
+                        graphics and user interface.
+
+
+                        Today, creating a website is one of the pillars of having an online presence. Because of this,
+                        the world of web design is as dynamic as ever. It is constantly evolving, including mobile apps
+                        and user interface design, to meet the growing needs of website owners and visitors alike.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>In today’s digital era, the importance of app design in application development cannot be
+                        overstated. With millions of apps available on various platforms, users have a plethora of
+                        options to choose from, making it essential for developers to create engaging, user-friendly,
+                        and accessible applications. This blog will explore the critical role that app design plays in
+                        the development process, focusing on aspects such as User Experience (UX), User Interface (UI),
+                        accessibility, branding, and consistency. By examining app design principles and best practices,
+                        we will gain a deeper understanding of how a well-designed app can enhance user satisfaction,
+                        ultimately contributing to the success of an application.
+
+                        From the outset, app designers and developers need to collaborate closely to ensure a seamless
+                        marriage of form and function. This collaboration is essential to create an application that not
+                        only meets users’ needs but also provides an enjoyable and intuitive experience. In the upcoming
+                        sections, we will delve into the importance of app design principles like clarity, feedback,
+                        flexibility, and consistency in crafting an app that stands out in today’s competitive market.
+                        Furthermore, we will discuss the app design process, including research, wireframing,
+                        prototyping, testing, and iteration, as well as how incorporating user feedback and
+                        design-driven development can lead to a more refined and successful product.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./S1.png"
+                        alt="">
+                    <div class="layer">
+                        <h2>Write.AI</h2><br>
+                        <p>Write.AI is an innovative project designed to streamline the process of content creation and
+                            editing. By leveraging powerful third-party APIs, Write.AI fetches relevant data based on
+                            user searches directly from the backend. This fetched data is then seamlessly integrated
+                            into our advanced editor, where users can effortlessly customize and refine the information
+                            to suit their specific needs.
+                        </p>
+                        <a href="https://github.com/Yashmehra05/Write.AI"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./S2.png"
+                        alt="">
+                    <div class="layer">
+                        <h2>Crypto_king</h2><br>
+                        <p>Crypto_King is a powerful and user-friendly platform designed for cryptocurrency enthusiasts
+                            and traders. This project provides real-time insights and detailed information about various
+                            cryptocurrencies, helping users make informed decisions. With Crypto_King, you can easily
+                            track the bid price, asked price, live price, as well as the lowest and highest prices in
+                            the last 24 hours for any cryptocurrency.
+                        </p>
+                        <a href="https://github.com/Yashmehra05/Crypto_King"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Yashmehra05?tab=repositories" class="btn">See More</a>
+    </div>
+    </div>
+</section>
+    <section id="contact">
+    <div class="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p id="et"><i class="fa-solid fa-envelope-circle-check fa-flip"
+                            style="color: goldenrod;"></i></i>mehrayash567@gmail.com</p>
+                    <p id="pt"><i class="fa-solid fa-phone fa-shake" style="color: darkblue;"></i></i>7087156360</p>
+                    <div class="social-icons">
+                        <!-- <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a> -->
+                        <!-- <a href="https://instagaram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                        <!-- <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a> -->
+                        <a href="https://linkedin.com/in/yash-mehra-6144bb264"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/yashmehra05"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./CV.jpg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">
+                            <h4>Submit</h4>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html> 
